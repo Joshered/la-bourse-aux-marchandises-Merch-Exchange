@@ -4,3 +4,6 @@ from django.shortcuts import render
 # Create your views here.
 def hello(request):
     return HttpResponse('<h1>Hello World!</h1>')
+
+def about(request):
+    return HttpResponse('<h1>Apropos</h2> <p>Nous adorons merch !</p>')

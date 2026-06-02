@@ -1,5 +1,0 @@
-env/
-marchB/marchB/__pycache__
-marchB/db.sqlite3
-marchB/listings/migrations
-marchB/listings/__pycache__

@@ -7,3 +7,7 @@ def hello(request):
 
 def about(request):
     return HttpResponse('<h1>Apropos</h2> <p>Nous adorons merch !</p>')
+
+def contact(request):
+    return HttpResponse('<h1>Nous contacter</h1>')
+

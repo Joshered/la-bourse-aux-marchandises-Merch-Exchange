@@ -11,3 +11,5 @@ def about(request):
 def contact(request):
     return HttpResponse('<h1>Nous contacter</h1>')
 
+def listinsgs(request):
+    return HttpResponse('<h1>Nos listings</h1>')

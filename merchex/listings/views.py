@@ -9,12 +9,10 @@ def hello(request):
                         <h1>Bonjour Django</h1>
                         <p>Mes goupes preferer sont :</p>
                         <ul>
-                        
                             <li>{bands[0].name}</li>
                             <li>{bands[1].name}</li> 
                             <li>{bands[2].name}</li>   
                         </ul>
-                        
                         """)
 
 def about(request):

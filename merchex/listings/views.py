@@ -3,7 +3,6 @@ from django.shortcuts import render
 from .models import Band
 from .models import Listings
 
-# Create your views here.
 def hello(request):
     bands = Band.objects.all()
     return HttpResponse(f"""
@@ -22,6 +21,7 @@ def about(request):
 def contact(request):
     return HttpResponse('<h1>Nous contacter</h1>')
 
+# POUR LES LISTings
 def listings(request):
     listing = Listings.objects.all()
     return HttpResponse(f"""

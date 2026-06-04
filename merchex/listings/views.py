@@ -3,6 +3,7 @@ from django.shortcuts import render
 from .models import Band
 from .models import Listings
 
+# POur les groupe.
 def hello(request):
     bands = Band.objects.all()
     return HttpResponse(f"""

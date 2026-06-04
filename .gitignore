@@ -1,7 +1,7 @@
+.venv/
 env/
 merchex/db.sqlite3
-merchex/listings/migrations/__pycache__
-merchex/listings/__pycache__
-merchex/merchex/__pycache__
+__pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd

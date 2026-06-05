@@ -6,7 +6,8 @@
     <title>Listings</title>
 </head>
 <body>
-    <h1>Nos listings</h1>
+    <h1> {% if listings|length == 1%} ma {%else%} mes {%endif%} liste{% if listings|length == 1%}{%else%}s{%endif%}</h1>
+
     <ul>
         {% comment %} Affichage des listings {% endcomment %}
         {% for listing in listings %}

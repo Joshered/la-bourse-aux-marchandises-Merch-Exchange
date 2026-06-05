@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listings</title>
-</head>
-<body>
+
+{% extends 'listings.base.html' %}
+
+{% block content %}   
     <h1> {% if listings|length == 1%} ma {%else%} mes {%endif%} liste{% if listings|length == 1%}{%else%}s{%endif%}</h1>
 
     <ul>
@@ -14,5 +10,4 @@
             <li>{{ listing.title }}</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock content %}

@@ -6,7 +6,7 @@ from .models import Listings
 # POur les groupe.
 def hello(request):
     bands = Band.objects.all()
-    return render(request,'listings/hello.html')
+    return render(request,'listings/hello.html',{"groupes":bands})
 
 def about(request):
     return HttpResponse('<h1>Apropos</h2> <p>Nous adorons merch !</p>')

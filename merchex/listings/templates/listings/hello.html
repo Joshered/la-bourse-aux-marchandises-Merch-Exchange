@@ -1,4 +1,4 @@
-<h1>List de mes groupe</h1>
+<h1> {% if nb_bands == 1%} mon {%else%} mes {%endif%} goupe{% if nb_bands == 1%}{%else%}s {%endif%}</h1>
 
 <ul>
     {% for band in bands %}

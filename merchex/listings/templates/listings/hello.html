@@ -1,5 +1,9 @@
 <h1>List de mes groupe</h1>
 
 <ul>
-    <li> {{groupes.1.name}} </li>
+    {% for band in bands %}
+        <li> {{band.name}} </li>
+    {% empty %}
+        <p>Aucun Groupe</p>
+    {% endfor %}
 </ul>

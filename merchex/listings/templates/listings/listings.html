@@ -8,6 +8,7 @@
 <body>
     <h1>Nos listings</h1>
     <ul>
+        {% comment %} Affichage des listings {% endcomment %}
         {% for listing in listings %}
             <li>{{ listing.title }}</li>
         {% endfor %}

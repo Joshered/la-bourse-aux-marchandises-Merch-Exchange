@@ -1,15 +1,15 @@
 {% extends 'listings/base.html' %}
 
 {% block content %}
-<h1> {% if bands|length == 1%} mon {%else%} mes {%endif%} goupe{% if bands|length == 1%}{%else%}s {%endif%}</h1>
+    <h1> {% if bands|length == 1%} mon {%else%} mes {%endif%} goupe{% if bands|length == 1%}{%else%}s {%endif%}</h1>
 
-<ul>
-    {% comment %} Affichage des groupes {% endcomment %}
-    {% for band in bands %}
-        <li> {{band.name}} </li>
-    {% empty %}
-        <p>Aucun Groupe</p>
-    {% endfor %}
-    <p> j'ai {{bands|length}} groupe.</p>
-</ul>
+    <ul>
+        {% comment %} Affichage des groupes {% endcomment %}
+        {% for band in bands %}
+            <li> {{band.name}} </li>
+        {% empty %}
+            <p>Aucun Groupe</p>
+        {% endfor %}
+        <p> j'ai {{bands|length}} groupe.</p>
+    </ul>
 {% endblock content %}

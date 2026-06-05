@@ -1,6 +1,7 @@
 <h1> {% if nb_bands == 1%} mon {%else%} mes {%endif%} goupe{% if nb_bands == 1%}{%else%}s {%endif%}</h1>
 
 <ul>
+    {% comment %} Affichage des groupes {% endcomment %}
     {% for band in bands %}
         <li> {{band.name}} </li>
     {% empty %}

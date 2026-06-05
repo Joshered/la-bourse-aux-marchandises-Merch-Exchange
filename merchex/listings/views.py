@@ -5,7 +5,9 @@ from .models import Listings
 
 # POur les groupe.
 def hello(request):
+    # Liste des groupes
     bands = Band.objects.all()
+    #nombre de groupes
     nb_bands = Band.objects.count()
     return render(request,'listings/hello.html',{"bands":bands, "nb_bands" : nb_bands})
 

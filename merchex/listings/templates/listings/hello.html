@@ -1,4 +1,4 @@
-
+{% block content %}
 <h1> {% if bands|length == 1%} mon {%else%} mes {%endif%} goupe{% if bands|length == 1%}{%else%}s {%endif%}</h1>
 
 <ul>
@@ -10,3 +10,4 @@
     {% endfor %}
     <p> j'ai {{bands|length}} groupe.</p>
 </ul>
+{% endblock content %}
